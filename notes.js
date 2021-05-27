@@ -16,4 +16,19 @@ const notes = [
 ];
 
 
+// console.log(notes);
+
+
+// Adding a new note exercise 
+
+const noteAboutToday = {
+    id: 3,
+    subject: "The push method",
+    date: "May 27 2021",
+    feeling: "It was a very nice addition to my knowledge ... pun intended.",
+    timeSpent: 10
+};
+
+notes.push(noteAboutToday);
+
 console.log(notes);
