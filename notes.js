@@ -31,4 +31,14 @@ const noteAboutToday = {
 
 notes.push(noteAboutToday);
 
-console.log(notes);
+// console.log(notes);
+
+// Displaying Your Note Journal Exercise 
+
+for (const note of notes) {
+    console.log(`Note ${note.id}
+I was learning ${note.subject}
+The minutes I spent studying was ${note.timeSpent}
+What I felt during this was: ${note.feeling}.`)
+};
+
