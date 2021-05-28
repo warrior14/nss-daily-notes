@@ -35,10 +35,21 @@ notes.push(noteAboutToday);
 
 // Displaying Your Note Journal Exercise 
 
-for (const note of notes) {
-    console.log(`Note ${note.id}
-I was learning ${note.subject}
-The minutes I spent studying was ${note.timeSpent}
-What I felt during this was: ${note.feeling}.`)
-};
+// for (const note of notes) {
+//     console.log(`Note ${note.id}
+// I was learning ${note.subject}
+// The minutes I spent studying was ${note.timeSpent}
+// What I felt during this was: ${note.feeling}.`)
+// };
 
+
+
+//  Finding a note exercise using a for of loop with if statement
+
+const searchTerm = 10
+
+for (const note of notes) {
+    if (note.timeSpent === searchTerm) {
+        console.log(note);
+    };
+};
